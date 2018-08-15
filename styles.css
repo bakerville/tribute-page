@@ -13,7 +13,7 @@ User Story #8: The img element should responsively resize, relative to the width
 
 
 html,body{
-    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-family: Alice, serif;
     text-align:center;
     min-width:260px;
     color:#333;
