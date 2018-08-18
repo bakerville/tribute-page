@@ -23,27 +23,34 @@ html,body{
   #main {
      background: LightGray;     
      display: grid;    
-     grid-gap: 20px 10px;
+     grid-gap: 20px;
   }
     
    .top{
-      background:LightSkyBlue;      
+      background:LightSkyBlue; 
+      display: grid;
+      grid-gap: 20px;
+      grid-template-areas: 
+      "hero hero menu"
+      "hero hero menu"     
     }
+      .hero{
+      
+      grid-area: hero;
+    }
+    #title { }
+    
+    
+    
 
-    #title {
-      color:red;
-    }
+    /* NAVIGATION  */
   
-    .hero{
-
-    }
-  
-
-   
   .menu{
       background:LightSalmon;
-     
+    
     }
+   
+  /* INFORMATION */
   .timeline{
       background:PaleTurquoise;
        
@@ -53,17 +60,36 @@ html,body{
       
     }
   
+    /* PRODUCTS */
   .products {
-    background: PaleGreen;         
+    background: PaleGreen;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "product-card D20"
+    "product-card D6"
   }
 
   .product-info{
 
   }
 
-  .product-info{
+ .dice{
+      
 
-  }
+    }
+
+    .D20{
+      background: rgb(196, 7, 7);
+
+    }
+
+    
+    .D6{
+      background: rgb(172, 83, 11);
+
+    }
+
   
   .footer {
     background: teal;    
