@@ -14,63 +14,60 @@ User Story #8: The img element should responsively resize, relative to the width
 
 html,body{
     font-family: Alice, serif;
+    font-size: 20px;
     text-align:center;
     min-width:260px;
     color:#333;
   }
   
-  .grid-layout {
-    font-size: 40px;
-    min-height: 300px;
-    width: 100%;
-    background: LightGray;
-    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr;
-   grid-gap: 20px 10px;
-   grid-template-areas: 
-      "nav header header"
-      "content paragraph1 paragraph2"
-      "footer footer footer"; 
+  #main {
+     background: LightGray;     
+     display: grid;    
+     grid-gap: 20px 10px;
   }
-  .item1{
-      background:LightSkyBlue;
-      grid-area: header;
+    
+   .top{
+      background:LightSkyBlue;      
     }
-  .item2{
+
+    #title {
+      color:red;
+    }
+  
+    .hero{
+
+    }
+  
+
+   
+  .menu{
       background:LightSalmon;
-      grid-area: nav;
+     
     }
-  .item3{
+  .timeline{
       background:PaleTurquoise;
-        grid-area: content;
+       
     }
-  .item4{
+  .about{
       background:LightPink;
-      grid-area: paragraph1;
+      
     }
   
-  .item5 {
-    background: PaleGreen;    
-    grid-area: paragraph2;      
+  .products {
+    background: PaleGreen;         
   }
-  .item6 {
-    background: teal;    
-    grid-area: footer;   
+
+  .product-info{
+
+  }
+
+  .product-info{
+
   }
   
-  .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.container {
-    padding: 2px 16px;
-}
+  .footer {
+    background: teal;    
+      
+  }
+  
+  
