@@ -9,91 +9,74 @@ User Story #7: I should see an a element with a corresponding id="tribute-link",
 --HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").
 User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
 */
-
-
-
-html,body{
-    font-family: Alice, serif;
-    font-size: 20px;
-    text-align:center;
-    min-width:260px;
+  
+  html {
+    box-sizing: border-box;
+    font-family: Alice, Helvetica, serif;
+    font-weight: 900;
+    font-size: 10px;
+    text-align:center;    
     color:#333;
-  }
-  
-  #main {
-     background: LightGray;     
-     display: grid;    
-     grid-gap: 20px;
-  }
-    
-   .top{
-      background:LightSkyBlue; 
-      display: grid;
-      grid-gap: 20px;
-      grid-template-areas: 
-      "hero hero menu"
-      "hero hero menu"     
-    }
-      .hero{
-      
-      grid-area: hero;
-    }
-    #title { }
-    
-    
-    
-
-    /* NAVIGATION  */
-  
-  .menu{
-      background:LightSalmon;
-    
-    }
-   
-  /* INFORMATION */
-  .timeline{
-      background:PaleTurquoise;
-       
-    }
-  .about{
-      background:LightPink;
-      
-    }
-  
-    /* PRODUCTS */
-  .products {
-    background: PaleGreen;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
-    "product-card D20"
-    "product-card D6"
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
   }
 
-  .product-info{
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  }
 
- .dice{
-      
-
-    }
-
-    .D20{
-      background: rgb(196, 7, 7);
-
-    }
-
+  body {
+    background-image: url(images/dice.svg);/*linear-gradient(110deg, #f93d66, #6d47d9);*/
+    background-color: #bae7d9;
+    background-size: 340px, auto;
     
-    .D6{
-      background: rgb(172, 83, 11);
-
-    }
-
-  
-  .footer {
-    background: teal;    
-      
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    /* background: white; */
+    background-position: fixed;
+    letter-spacing: -1px;
   }
-  
+
+
+  /*left off for styling
+  #main{
+    margin:30px auto;
+    padding:15px;
+    border:0px solid;
+    border-radius:5px;
+    
+  }
+  img{
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    margin: auto;
+  }
+  #img-div{
+    margin:-5px;
+    margin-top:20px;
+    width:100%;
+    border:5px solid white;
+    background:white;
+  }
+  #img-caption{
+    margin:15px;
+  }
+  #headline{
+    margin-top:50px;
+    text-align:left;
+  }
+  ul{
+    max-width:550px;
+    margin:0 auto;
+    text-align:left;
+  }
+  li{
+    margin: 10px;
+  }
+  blockquote{
+    font-style: italic;
+  }
   
