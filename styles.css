@@ -29,7 +29,7 @@ User Story #8: The img element should responsively resize, relative to the width
 
   body {
     background-image: url(images/dice.svg);/*linear-gradient(110deg, #f93d66, #6d47d9);*/
-    background-color: #bae7d9;
+    background-color: #b2e7d6;
     background-size: 340px, auto;
     
     min-height: calc(100vh - 100px);
