@@ -14,9 +14,9 @@ User Story #8: The img element should responsively resize, relative to the width
     box-sizing: border-box;
     font-family: Alice, Helvetica, serif;
     font-weight: 900;
-    font-size: 10px;
+    font-size: 16px;
     text-align:center;    
-    color:#333;
+    color: #b9b9aa;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
   }
 
@@ -28,8 +28,8 @@ User Story #8: The img element should responsively resize, relative to the width
 
 
   body {
-    background-image: url(images/dice.svg);/*linear-gradient(110deg, #f93d66, #6d47d9);*/
-    background-color: #b2e7d6;
+    background-image: url;/*linear-gradient(110deg, #f93d66, #6d47d9);*/
+    background-color: #312;
     background-size: 340px, auto;
     
     min-height: calc(100vh - 100px);
@@ -39,7 +39,9 @@ User Story #8: The img element should responsively resize, relative to the width
     letter-spacing: -1px;
   }
 
-
+h1{
+  font-size: 50px;
+}
   /*left off for styling
   #main{
     margin:30px auto;
@@ -54,7 +56,7 @@ User Story #8: The img element should responsively resize, relative to the width
     height: auto;
     margin: auto;
   }
-  #img-div{
+  */#img-div{
     margin:-5px;
     margin-top:20px;
     width:100%;
